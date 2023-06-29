@@ -1,1 +1,29 @@
+ <div class="container">
+  <div class="row mx-auto">
+    <h1>Gestograma</h1>
+   
+    <div class="col-sm-6">
+      <form [formGroup]="form" class="text-center">
+        <div class="d-flex flex-column align-items-center">
+          <h4>Fecha de su última menstruación</h4>
+          <input type="date" class="form-control rounded-input"  
+          formControlName="date" placeholder="Ingrese fecha de su menstruación">
+          <button type="button" class="btn btn-primary" (click)="calcularFechaDeParto()">Calcular</button>
+
+        </div>
+        <div *ngIf="fep" class="row mx-auto">
+       
+          <h4>Fecha estimada de parto:</h4>
+          <p>{{ fep | date:'dd MMMM yyyy': 'es' }}</p>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-sm-6">
+      <img src="../assets/embarazada.jpg" alt="embarazada" width="500px">
+    </div>
+
+  </div>
+</div>
+
  

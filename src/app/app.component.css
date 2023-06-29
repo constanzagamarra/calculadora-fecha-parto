@@ -1,0 +1,50 @@
+.container {
+    height: 100vh;  
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  h1 {
+      color:#666666;
+      text-align: center;
+      padding-top: 15px;
+  }
+
+  h4 {
+    color:#828282;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.rounded-input {
+    margin-top: 10px;
+    border: none;
+    
+    padding: 10px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  button{
+background-color: #F8848F;
+border: 1px solid #F8848F;
+margin-top: 10px;
+  }
+
+  button:hover{
+    background-color: #fc949e;
+    border: 1px solid #fc949e;
+      }
+
+      .btn-primary:active {
+        background-color: #F8848F;
+        border: 1px solid #F8848F;
+      }
+
+ 
